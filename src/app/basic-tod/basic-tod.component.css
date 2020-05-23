@@ -1,0 +1,76 @@
+.container{
+  background-color: #abc;
+}
+
+.tasks__item{
+  margin-bottom: .5em;
+  position:relative;
+}
+.task-item{
+    cursor: pointer;
+    width: 100%;
+    text-align:left;
+    padding: .85em 2.25em .85em 1em;
+    background-color: rgb(206, 205, 205);
+    border: 1px solid rgb(156, 156, 156);
+}
+  
+.task-item:hover{
+  background-color: rgb(156, 156, 156);
+  border-color: rgb(179, 179, 179);
+}
+
+.task-item.completed{
+  text-decoration: line-through;
+  background-color: rgb(4, 231, 4);
+  border-color: rgb(0, 158, 0);
+}
+
+.task-item.completed:hover{
+  background-color: rgb(2, 146, 2);
+  border-color: rgb(0, 138, 0);
+}
+
+h1, button{
+  font-family: 'Nunito', sans-serif;} 
+
+.remove-button{
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.remove-button i{
+  vertical-align: middle;
+}
+
+.complete label{
+    text-decoration: line-through;
+}
+
+.header {
+    padding-top: 10px;
+}
+
+.todo-list {
+    list-style: none;    
+    padding-left: 0px;
+}
+
+.todo-list li {
+    padding-top: 2%;
+}
+
+.main {
+    padding-top: 5%;
+}
+
+.bg-success {
+    background-color: lightgreen !important;
+}
+
+.bg-secondary {
+    background-color: lightsteelblue !important;
+}

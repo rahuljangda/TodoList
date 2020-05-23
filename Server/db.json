@@ -1,0 +1,41 @@
+{
+  "Bucket": [
+    {
+      "name": "Bucket 1",
+      "id": 1
+    },
+    {
+      "name": "ABCD",
+      "id": 2
+    },
+    {
+      "name": "ABCDE",
+      "id": 3
+    }
+  ],
+  "ToDO": [
+    {
+      "id": 1,
+      "name": "Test 1",
+      "description": "description 1",
+      "bucketid": 1
+    }
+  ],
+  "BasicToDO": [
+    {
+      "title": "Create Project",
+      "complete": true,
+      "id": 3
+    },
+    {
+      "title": "hg",
+      "complete": false,
+      "id": 4
+    },
+    {
+      "title": "gjkj",
+      "complete": false,
+      "id": 5
+    }
+  ]
+}
