@@ -3,6 +3,7 @@ import { BasicToDo } from '../basic-to-do';
 import { common } from './common';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import jsonList from '../db/db.json';
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +29,11 @@ export class BasictodoService {
 
   deleteData(id){
     return this.http.delete(this.commonData.serverurl + "/basictodo/"+`${id}`);
+  }
+
+  getJsonList() {
+    let bucketList = [];
+    bucketList = jsonList;
+    return bucketList;
   }
 }

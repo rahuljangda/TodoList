@@ -14,6 +14,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
+import { AlertComponent } from './alert/alert.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -23,7 +25,9 @@ import { environment } from 'src/environments/environment';
     ToDoComponent,
     BucketComponent,
     HeaderComponent,
-    BasicTodComponent
+    BasicTodComponent,
+    AlertComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

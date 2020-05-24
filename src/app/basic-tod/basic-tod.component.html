@@ -1,3 +1,5 @@
+<app-home (selectedType)="selectedType($event)"></app-home>
+<app-alert></app-alert>
 <div class="container justify-content-center">
   <div class="row">
     <div class="col-10">
@@ -15,9 +17,9 @@
     <div class="col-10">
       <section class="main" *ngIf="todoList.length > 0">
         <ul class="todo-list">
-          <li *ngFor="let todo of todoList" [class.complete]="todo.complete">
+          <li *ngFor="let todo of todoList;let j=index" [class.complete]="todo.complete">
                 <button class="task-item" [class.completed]="todo.complete" (click)="toggleToDOComplete(todo)">{{todo.title}}</button>
-                <button class="remove-button button alert alert-danger pull-right" (click)="removeTodo(todo)"><i class="fa fa-times"></i></button>
+                <button class="remove-button button alert alert-danger pull-right" (click)="removeTodo(todo,j)"><i class="fa fa-times"></i></button>
           </li>
         </ul>
       </section>
